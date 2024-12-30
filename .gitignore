@@ -1,5 +1,5 @@
-defects4j
-result
+/defects4j/
+/result/
 .DS_Store
 .idea
 .vscode
