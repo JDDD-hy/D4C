@@ -1,0 +1,8 @@
+defects4j
+result
+.DS_Store
+.idea
+.vscode
+.dev
+__pycache__
+__MACOSX
