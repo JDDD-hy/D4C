@@ -181,7 +181,9 @@ It is also recommended to use more advanced models, such as GPT-4o or Llama 3.1 
 
 ## Clarification on token pricing
 
-⚠️ We would like to clarify a mistake in the token pricing mentioned in our paper. Initially, we referenced the "latest gpt-4 checkpoint" pricing based on the `gpt-4-1106-preview`, which is actually part of the `gpt-4-turbo` series ($0.01 for 1k input tokens, $0.03 for 1k output tokens). However, this pricing differs from the `gpt-4-0613` model, which is follows a difference pricing ($0.03 for 1k input tokens, $0.06 for 1k output tokens). Thus, the average cost in the paper should be revised from $0.23 to $0.59. We apologize for this oversight and any confusion it may have caused.
+⚠️ We would like to clarify a mistake in the token pricing mentioned in our paper: the average cost of D4C (GPT-4 ver.) should be revised from $0.23 to $0.59. 
+
+During paper drafting, we mistakenly referenced the "latest gpt-4 checkpoint" pricing based on the `gpt-4-1106-preview`, which is actually part of the `gpt-4-turbo` series ($0.01 for 1k input tokens, $0.03 for 1k output tokens). However, this pricing differs from the `gpt-4-0613` model, which is follows a difference pricing ($0.03 for 1k input tokens, $0.06 for 1k output tokens). Thus, the average cost in the paper should be revised from $0.23 to $0.59. We apologize for this oversight and any confusion it may have caused.
 
 ## License
 
