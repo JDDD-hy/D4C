@@ -168,7 +168,7 @@ Note that:
 
 ## Archived Results
 
-We provide archived results of D4C in our experiments in `archive` directory, marked with `_archived` suffix, include Defects4J results from GPT-4 and DebugBench results from both GPT-4 and Mixtral. For example, the bugs that passed all JUnit tests in Defects4J can be found [here](archive/defects4j/eval_d4c_gpt_archived.csv).
+We provide archived results of D4C in our experiments in `archive` directory, marked with `_archived` suffix, include Defects4J results from GPT-4 and DebugBench results from both GPT-4 and Mixtral. For example, the bugs that passed all JUnit tests in Defects4J can be found [here](archive/defects4j/eval_d4c_gpt_archived.csv). We also provide the correct fixed bug list of Defects4J in this direcotry for reference.
 
 ## Reproducing D4C in other settings
 
@@ -178,6 +178,10 @@ To reproduce D4C on other benchmarks (e.g., SWE-Bench, MBPP, HumanEval, or new b
 2.	Replace the extracted bug artifacts in the `data` directory and run this code project.
 
 It is also recommended to use more advanced models, such as GPT-4o or Llama 3.1 8B Instruct. These models typically offer better performance, faster inference speed, and lower token costs or GPU memory requirements.
+
+## Clarification on token pricing
+
+⚠️ We would like to clarify a mistake in the token pricing mentioned in our paper. Initially, we referenced the "latest gpt-4 checkpoint" pricing based on the `gpt-4-1106-preview`, which is actually part of the `gpt-4-turbo` series ($0.01 for 1k input tokens, $0.03 for 1k output tokens). However, this pricing differs from the `gpt-4-0613` model, which is follows a difference pricing ($0.03 for 1k input tokens, $0.06 for 1k output tokens). Thus, the average cost in the paper should be revised from $0.23 to $0.59. We apologize for this oversight and any confusion it may have caused.
 
 ## License
 
